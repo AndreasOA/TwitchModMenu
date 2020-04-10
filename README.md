@@ -13,8 +13,8 @@ https://nodejs.org/en/
 ### After cloning the repo
 
  ```
- cd electron
+ cd TwitchModMenu/electron
  npm install
  npm start
  ```
- You have to change into the electron folder and install all needed modules. Afterwards you are ready to go.
+ You have to switch into the electron folder and install all needed modules. Afterwards you are ready to go.
