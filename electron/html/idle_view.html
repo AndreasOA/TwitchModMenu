@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-toggleable-md navbar-dark bg-dark" style="background-color: #272727;" id="nav-main">
+      <a class="navbar-brand" href="#">
+        <img src="../../images/GameLogo_pic.png" width="40" height="40" alt="">
+        Twitch Mod GUI
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Idle view<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <form id="autoview-login-form">
+      <div class="form-group">
+        <label for="autoview-input-email" class="text-light">Email address</label>
+        <input type="email" class="form-control w-75 p-3" id="autoview-input-email" aria-describedby="emailHelp" >
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+      <div class="form-group">
+        <label for="autoview-input-password" class="text-light">Password</label>
+        <input type="password" class="form-control w-75 p-3" id="autoview-input-password" required>
+      </div>
+      <button class="btn btn-secondary" onclick="link_hello()">Submit</button>
+    </form>
+  </div>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/custom.css">
+
+    <script type="text/javascript" src="./../node_modules/jquery/dist/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/popper.js/dist/popper-utils.min.js"></script>
+
+    <script src="../../js/custom.js"></script>
+    <script src="../../js/hello-linker.js"></script>
+  </body>
+</html>
