@@ -6,7 +6,8 @@ class GmailCodeRead:
 
         self.email = email
         self.password = password
-        self.driver = webdriver.Chrome(r'chromedriver.exe')
+        self.driver = webdriver.Chrome(r'/usr/local/bin/chromedriver')
+        #self.driver = webdriver.Chrome(r'chromedriver.exe')
 
     def login(self):
         GeneralFunctions.insertText(self.driver, 'email', self.email, elementType='input', attribute='type')

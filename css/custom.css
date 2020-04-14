@@ -84,12 +84,33 @@ body {
     }
 }
 
-#autoview-login-form {
-    margin-top: 100px;
-    margin-left: 5%;
+#idleview-login-form {
+    margin-top: 50px;
+    margin-left: 3%;
+    margin-right: 10%;
+}
+
+#idleview-instruction {
+    margin-top: 60px;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 #welcome-note {
-    margin-top: 100px;
-    margin-left: 2%;
+    margin-top: 60px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+#idleview-twitch-credentials {
+    margin-top: 15px;
+}
+
+#idleview-category {
+    margin-top: 35px;
+}
+
+#idleview-submit {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

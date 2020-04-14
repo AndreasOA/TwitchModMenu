@@ -4,13 +4,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   </head>
   <body>
     <nav class="navbar navbar-toggleable-md navbar-dark bg-dark" style="background-color: #272727;" id="nav-main">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand">
         <img src="../../images/GameLogo_pic.png" width="40" height="40" alt="">
-        Twitch Mod GUI
+        Twitch Mod Menu
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -18,7 +17,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home</a>
+            <a class="nav-link" href="home.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Features</a>
@@ -30,17 +29,76 @@
       </div>
     </nav>
 
-    <form id="autoview-login-form">
-      <div class="form-group">
-        <label for="autoview-input-email" class="text-light">Email address</label>
-        <input type="email" class="form-control w-75 p-3" id="autoview-input-email" aria-describedby="emailHelp" >
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <div id="idleview-instruction" class="card">
+      <div class="card-header">
+        <b>IDLE VIEW</b> - Instruction
       </div>
-      <div class="form-group">
-        <label for="autoview-input-password" class="text-light">Password</label>
-        <input type="password" class="form-control w-75 p-3" id="autoview-input-password" required>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>
+            Idle view is used to enter streams and fake your activity in order to get game drops or just channel points.<br>
+            However, in order to use the idle viewer you have to enter the following things below:
+            <br>  - GMAIL E-Mail address
+            <br>  - GMAIL E-Mail password
+            <br>  - Twitch username
+            <br>  - Twitch password
+            <br>  - Select if you want to watch a specific streamer or genre
+            <br>  - Category or Streamer name
+            <br>
+            <br> Afterwards you can press submit and you should notice a chrome driver on your screen. Now you are set and everything is done from alone. Please dont use the chromedriver window for
+            anything else.
+          </p>
+          <footer class="blockquote-footer"> Your <cite title="Source Title">TwitchModMenu Team</cite></footer>
+        </blockquote>
       </div>
-      <button class="btn btn-secondary" onclick="link_hello()">Submit</button>
+    </div>
+    
+
+    <form id="idleview-login-form">
+      <div id="idleview-email-credentials" class="row">
+        <div class="col">
+          <input type="email" class="form-control" id="idleview-input-email" placeholder="E-Mail">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email or password with anyone else.</small>
+        </div>
+        <div class="col">
+          <input type="password" class="form-control" id="idleview-input-email-password" placeholder="Password">
+        </div>
+      </div>
+      <div id="idleview-twitch-credentials"class="row">
+        <div class="col">
+          <input type="text" class="form-control" id="idleview-input-twitch-username" placeholder="Twitch username">
+        </div>
+        <div class="col">
+          <input type="password" class="form-control" id="idleview-input-twitch-password" placeholder="Password">
+        </div>
+      </div>
+      <div id="idleview-category" class="row">
+        <div class="col">
+          <fieldset class="form-group text-light">
+            <div class="row w-75">
+              <legend class="col-form-label col pt-0"><b>Search Type</b></legend>
+              <div class="col">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" onclick="changeCategoryName('Streamer Name')" name="idleview-category-searchtype" id="idleview-category-streamer" checked>
+                  <label class="form-check-label" for="idleview-category-streamer">
+                    Streamer
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" onclick="changeCategoryName('Category Name')" name="idleview-category-searchtype" id="idleview-category-category">
+                  <label class="form-check-label" for="idleview-category-category">
+                    Category
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" id="idleview-input-streamer" placeholder="Streamer name">
+        </div>
+      </div>
+      <button type="button" id="idleview-submit" class="btn btn-success" onclick="link_hello()">Start idle viewing</button>
     </form>
   </div>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -51,6 +109,6 @@
     <script src="../node_modules/popper.js/dist/popper-utils.min.js"></script>
 
     <script src="../../js/custom.js"></script>
-    <script src="../../js/hello-linker.js"></script>
+    <script src="../../js/idleview-linker.js"></script>
   </body>
 </html>

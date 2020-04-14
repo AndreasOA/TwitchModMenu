@@ -10,7 +10,7 @@ class TwitchChatbot:
         self.streamername = streamername
         self.gmailmail = gmailmail
         self.gmailpassword = gmailpw
-        self.driver = webdriver.Chrome(r'chromedriver.exe')
+        self.driver = webdriver.Chrome(r'/usr/local/bin/chromedriver')
         self.action = ActionChains(self.driver)
 
     # Reading in the chats from .txt file
